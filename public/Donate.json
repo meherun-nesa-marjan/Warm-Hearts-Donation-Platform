@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "title": "Warm Hearts for Dhaka",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Providing warm clothing for underprivileged families in Dhaka city.",
+      "status": "Active",
+      "contactInfo": "contact@warmheartsdhaka.org",
+      "division": "Dhaka"
+    },
+    {
+      "id": 2,
+      "title": "Chittagong Winter Relief",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Helping rural communities in Chittagong survive the winter chill.",
+      "status": "Active",
+      "contactInfo": "info@ctgwinterrelief.com",
+      "division": "Chittagong"
+    },
+    {
+      "id": 3,
+      "title": "Sylhet Winter Support",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Collecting and distributing winter clothing for Sylhet's tea workers and villages.",
+      "status": "Completed",
+      "contactInfo": "support@sylhetwintersupport.org",
+      "division": "Sylhet"
+    },
+    {
+      "id": 4,
+      "title": "Rajshahi Warm Clothing Drive",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Spreading warmth to the rural areas of Rajshahi with your generous donations.",
+      "status": "Ongoing",
+      "contactInfo": "help@rajshahiwarmdrive.com",
+      "division": "Rajshahi"
+    },
+    {
+      "id": 5,
+      "title": "Barishal Blanket Campaign",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Ensuring no one sleeps in the cold this winter in Barishal.",
+      "status": "Upcoming",
+      "contactInfo": "reach@barishalblanketcampaign.org",
+      "division": "Barishal"
+    },
+    {
+      "id": 6,
+      "title": "Khulna Winter Essentials",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Delivering winter essentials to the impoverished areas of Khulna.",
+      "status": "Active",
+      "contactInfo": "admin@khulnawinteressentials.org",
+      "division": "Khulna"
+    },
+    {
+      "id": 7,
+      "title": "Mymensingh Winter Aid",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Providing immediate winter relief to Mymensingh's vulnerable communities.",
+      "status": "Active",
+      "contactInfo": "info@mymensinghwinteraid.com",
+      "division": "Mymensingh"
+    },
+    {
+      "id": 8,
+      "title": "Rangpur Blanket Drive",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Spreading warmth in the chilly northern division of Rangpur.",
+      "status": "Completed",
+      "contactInfo": "team@rangpurblanketdrive.com",
+      "division": "Rangpur"
+    }
+  ]
+  
