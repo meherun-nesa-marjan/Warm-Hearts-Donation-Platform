@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { FaHandHoldingHeart } from "react-icons/fa";
 import { NavLink, Link } from "react-router-dom";
 import { AuthContext } from '../Providers/AuthProvider';
 const Navbar = () => {
@@ -13,8 +14,8 @@ const Navbar = () => {
     const navItems = [
         { path: '/', element: 'Home' },
         { path: '/Campaigns', element: 'Campaigns' },
-        { path: '/Help', element: 'How to Help' },
-       
+        { path: '/HowToHelp', element: 'How to Help' },
+
         ...(user ? [{ path: '/Dashboard', element: 'Dashboard' }] : []),
 
     ];
@@ -39,13 +40,22 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 3</a></li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[50] mt-3 w-52 p-2 shadow">
+                            {navItems.map(({ path, element }) => (
+                                <NavLink
+                                    key={path}
+                                    to={path}
+                                    className={({ isActive }) =>
+                                        `lg:text-2xl text-green-900 mx-3 ${isActive ? ' font-bold' : ''}`
+                                    }
+                                >
+                                    {element}
+                                </NavLink>
+                            ))}
                         </ul>
                     </div>
 
-                    <NavLink to="/" className={'lg:text-2xl text-green-900'}>W.Clothing Donation</NavLink>
+                    <NavLink to="/" className={'lg:text-2xl flex font-bold gap-1 text-green-900'}> <span className='py-1'><FaHandHoldingHeart /></span> WarmHearts</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

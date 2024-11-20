@@ -11,6 +11,7 @@ import Privet from "../Components/Privet";
 import Dashboard from "../Components/Dashboard";
 import Updateprofile from "../Components/Updateprofile";
 import Forgetpass from "../Components/Forgetpass";
+import HowToHelp from "../Components/HowToHelp";
 
 
 
@@ -35,6 +36,11 @@ const Routes = createBrowserRouter([
             element: <DonationCampaigns />,
             loader: () => fetch('../Donate.json'),
           },
+          {
+            path:"/HowToHelp",
+            element:<HowToHelp />
+          },
+
           {
             path: "/DonationDetails",
             element: <Privet><DonationDetails /></Privet>,

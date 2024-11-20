@@ -16,7 +16,7 @@ const Dashboard = () => {
         <h1 className="text-5xl font-bold">Welcome, {user?.displayName || "User"}!</h1>
         <p className="py-6">Here is your profile information:</p>
 
-        <div className="card bg-base-100 w-96 shadow-xl p-6">
+        <div className="card bg-base-100 lg:w-96 w-full shadow-xl p-6">
         
           <figure className="mb-4">
             <img

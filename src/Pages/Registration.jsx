@@ -17,23 +17,21 @@ const Registration = () => {
     const email = e.target.email.value;
     const photoURL = e.target.photoURL.value;
     const password = e.target.password.value;
-
-    // Password validation
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     if (!passwordRegex.test(password)) {
       setError(
         "Password must contain at least 6 characters, an uppercase letter, and a lowercase letter."
       );
-      return; // Prevent submission
+      return; 
     }
-    setError(""); // Clear previous errors
+    setError("");
 
     createUser(email, password)
       .then((result) => {
         const user = result.user;
         UpdateUserProfile({ displayName: name, photoURL: photoURL })
           .then(() => {
-            navigate("/"); // Navigate to home after successful registration
+            navigate("/");
           })
           .catch((updateError) => {
             setError("Error updating profile: " + updateError.message);
@@ -48,7 +46,7 @@ const Registration = () => {
     signInWithGoogle()
       .then((result) => {
         console.log("User registered with Google:", result.user);
-        navigate("/"); // Redirect to home after Google registration
+        navigate("/"); 
       })
       .catch((error) => {
         setError("Google registration failed: " + error.message);
@@ -63,7 +61,7 @@ const Registration = () => {
     <div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col">
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h1 className="text-5xl font-bold">Register now!</h1>
             <p className="py-6">Join us and help make a difference.</p>
           </div>

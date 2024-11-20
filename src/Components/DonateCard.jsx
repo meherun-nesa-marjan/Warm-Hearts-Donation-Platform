@@ -6,7 +6,7 @@ const DonateCard = ({ CampaignData }) => {
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
       {CampaignData.map((campaignData) => (
         <div key={campaignData.id} className="card bg-base-100 shadow-xl">
           <figure>

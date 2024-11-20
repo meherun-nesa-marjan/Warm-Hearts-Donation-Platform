@@ -51,7 +51,7 @@ const Login = () => {
     <div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col">
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h1 className="text-5xl font-bold">Login to Access More Info</h1>
             <p className="py-6">Welcome back! Please login to continue.</p>
           </div>
