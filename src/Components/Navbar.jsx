@@ -1,17 +1,26 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
+import React, { useContext } from 'react';
+import { NavLink, Link } from "react-router-dom";
+import { AuthContext } from '../Providers/AuthProvider';
 const Navbar = () => {
-
+    const { user, signOutUser } = useContext(AuthContext)
+    const handleSignOut = () => {
+        signOutUser()
+            .then(() => {
+            })
+            .catch((error) => {
+            });
+    }
     const navItems = [
         { path: '/', element: 'Home' },
         { path: '/Campaigns', element: 'Campaigns' },
         { path: '/Help', element: 'How to Help' },
-       
+        ...(user ? [{ path: '/DonationDetails', element: 'Donation Details' }] : []),
+        ...(user ? [{ path: '/Dashboard', element: 'Dashboard' }] : []),
 
     ];
     return (
-        <div>
-            <div className="navbar bg-[#daebe8]">
+        <div className='bg-[#daebe8] py-5'>
+            <div className="navbar lg:w-10/12 mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,8 +64,33 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end">
-                    <a className="btn">Login</a>
+                    {
+                        user ? (
+
+                            <div className="flex items-center space-x-4">
+                                {user.photoURL && (
+                                    <img
+                                        src={user.photoURL}
+                                        alt="User Avatar"
+                                        className="w-8 h-8 rounded-full"
+                                    />
+                                )}
+
+                                <button onClick={handleSignOut}
+                                    className="btn bg-red-500 text-white">
+                                    Logout
+                                </button>
+                            </div>
+                        ) : (
+                            <Link to={'/Login'}>
+                                <button className="btn bg-[#137257] text-white">
+                                    Login
+                                </button>
+                            </Link>
+                        )
+                    }
                 </div>
+
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='bg-[#ECF5F3]'>
+        <div className='py-20 bg-[#ECF5F3]'>
             <div className="hero">
                 <div className="hero-content text-center">
                     <div className="">
@@ -10,7 +10,7 @@ const About = () => {
                         <p>
                             W.Clothing Donation organizes a Winter Cloth Collection and Distribution Program every year to stand with helpless and impoverished people against the severity of cold in winter. Donation collection, warm cloth collection and distribution, and the W.Clothing Donation charity hoodie are the main features of this program. The main reason behind this program is to spread warmth and put a smile on the faces of needy people.
                         </p>
-                        <div className="flex justify-between my-6">
+                        <div className="lg:flex justify-between my-6">
                            
                         <div className="border mx-5 p-5 bg-[#137257] text-white rounded-xl">
                                 <h3 className='font-bold mb-5 text-xl'>Our Mission</h3>
