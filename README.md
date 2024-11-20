@@ -1,8 +1,53 @@
-# React + Vite
+# **W.Clothing Donation Platform**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### **Purpose**
+The **W.Clothing Donation Platform** is designed to connect individuals and organizations for clothing donations. It allows users to browse campaigns, contribute to causes, and manage their accounts seamlessly.
 
-Currently, two official plugins are available:
+### **Live URL**
+[Visit the Live Project](#)  
+*(Replace `#` with your deployed live URL)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## **Key Features**
+1. **Authentication:**
+   - User registration and login functionality.
+   - Login with Google authentication.
+   - Password reset with email link.
+
+2. **Profile Management:**
+   - Update user profile details such as name and photo URL.
+   - Toggle password visibility for better usability.
+
+3. **Campaigns:**
+   - View and explore donation campaigns.
+   - Access detailed information about campaigns (authenticated users only).
+
+4. **Dashboard:**
+   - Personalized dashboard for logged-in users to manage their activities.
+
+5. **User Experience:**
+   - Responsive design for devices of all screen sizes.
+   - Toast notifications for feedback on actions.
+
+6. **Error Handling:**
+   - Custom error messages for invalid actions or forms.
+   - 404 error page for unrecognized routes.
+
+---
+
+
+
+## **NPM Packages**
+This project uses the following npm packages:
+- `react`
+- `react-dom`
+- `react-router-dom`
+- `firebase`
+- `react-icons`
+- `react-toastify`
+- `tailwindcss`
+- `vite`
+
+
+

@@ -14,7 +14,7 @@ const Navbar = () => {
         { path: '/', element: 'Home' },
         { path: '/Campaigns', element: 'Campaigns' },
         { path: '/Help', element: 'How to Help' },
-        ...(user ? [{ path: '/DonationDetails', element: 'Donation Details' }] : []),
+       
         ...(user ? [{ path: '/Dashboard', element: 'Dashboard' }] : []),
 
     ];
