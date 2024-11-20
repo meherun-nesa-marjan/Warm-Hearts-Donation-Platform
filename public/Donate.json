@@ -70,6 +70,15 @@
       "status": "Completed",
       "contactInfo": "team@rangpurblanketdrive.com",
       "division": "Rangpur"
+    },
+    {
+      "id": 9,
+      "title": "Rajshahi Winter Essentials",
+      "image": "https://i.ibb.co.com/qBYkk4Y/girl-with-sweaters.jpg",
+      "description": "Delivering winter essentials to the impoverished areas of Khulna.",
+      "status": "Active",
+      "contactInfo": "admin@rajshahiwinteressentials.org",
+      "division": "Rajshahi"
     }
   ]
   

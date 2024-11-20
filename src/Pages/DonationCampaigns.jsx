@@ -18,7 +18,7 @@ const DonationCampaigns = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
+            <div className="pb-10">
                 <DonateCard key={CampaignData.id} CampaignData={CampaignData} />
 
             </div>
