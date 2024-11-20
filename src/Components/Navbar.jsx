@@ -79,11 +79,11 @@ const Navbar = () => {
 
                             <div className="flex items-center space-x-4">
                                 {user.photoURL && (
-                                    <img
-                                        src={user.photoURL}
-                                        alt="User Avatar"
-                                        className="w-8 h-8 rounded-full"
-                                    />
+                                  <img
+                                  src={user.photoURL || "/default-avatar.png"}
+                                  alt="Profile"
+                                  className="w-8 h-8 rounded-full"
+                                />
                                 )}
 
                                 <button onClick={handleSignOut}

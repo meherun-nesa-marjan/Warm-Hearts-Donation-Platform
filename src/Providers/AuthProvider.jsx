@@ -19,7 +19,7 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth,email,password);
   }
   const signInWithGoogle = () =>{
-    return signInWithPopup(auth,googleProvider);
+    return signInWithPopup(auth,googleProvider)
   }
   const signOutUser = ()=>{
     setLoading(true);
@@ -27,6 +27,9 @@ const AuthProvider = ({ children }) => {
   }
   const UpdateUserProfile =(updateData)=>{
     return updateProfile(auth.currentUser, updateData)
+    .then(() => {
+      setUser({ ...auth.currentUser, ...updateData });
+    });
 
   }
   useEffect(()=>{
