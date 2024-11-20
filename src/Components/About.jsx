@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'animate.css';
 const About = () => {
     return (
         <div className='py-20 bg-[#ECF5F3]'>
@@ -12,11 +12,11 @@ const About = () => {
                         </p>
                         <div className="lg:flex justify-between my-6">
                            
-                        <div className="border mx-5 p-5 bg-[#137257] text-white rounded-xl">
+                        <div className="border mx-5 p-5 bg-[#137257] animate__animated  animate__bounceInLeft animate__delay-4s text-white rounded-xl">
                                 <h3 className='font-bold mb-5 text-xl'>Our Mission</h3>
                                <p>WarmHearts was founded with a view to helping the destitute people living around us with the basic necessities of human life. WarmHearts helps them as a relative helps us in our time of emergency.</p>
                             </div>
-                            <div className="border mx-5 p-5 bg-[#137257] text-white rounded-xl">
+                            <div className="border mx-5 p-5 bg-[#137257] animate__animated  animate__bounceInRight animate__delay-4s text-white rounded-xl">
                                 <h3 className='mb-5 font-bold text-xl'>Sponsor Winter Cloth</h3>
                                <p>You can now sponsor clothes & other financial needs.You can provide winter clothes for cold-stricken poor families living in the remote corners of the country.</p>
                             </div>
