@@ -1,7 +1,7 @@
 # **WarmHearts Donation Platform**
 
 ### **Purpose**
-The **W.Clothing Donation Platform** is designed to connect individuals and organizations for clothing donations. It allows users to browse campaigns, contribute to causes, and manage their accounts seamlessly.
+The **Warmhearts Donation Platform** is designed to connect individuals and organizations for clothing donations. It allows users to browse campaigns, contribute to causes, and manage their accounts seamlessly.
 
 ### **Live URL**
 [Visit the Live Project](https://my-new-assignment-9.netlify.app/)  
