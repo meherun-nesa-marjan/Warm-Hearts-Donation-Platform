@@ -1,4 +1,4 @@
-# **W.Clothing Donation Platform**
+# **WarmHearts Donation Platform**
 
 ### **Purpose**
 The **W.Clothing Donation Platform** is designed to connect individuals and organizations for clothing donations. It allows users to browse campaigns, contribute to causes, and manage their accounts seamlessly.
