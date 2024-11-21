@@ -1,23 +1,22 @@
-import React, { useContext, useState } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { AuthContext } from '../Providers/AuthProvider';
+import React, { useContext, useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const navigate = useNavigate();
-  const location = useLocation(); 
+  const location = useLocation();
   const { signInUser, signInWithGoogle } = useContext(AuthContext);
   const [error, setError] = useState("");
-
+  const [email, setEmail] = useState("");
 
   const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (e) => {
     e.preventDefault();
-    setError(""); 
-    const email = e.target.email.value;
+    setError("");
     const password = e.target.password.value;
 
     signInUser(email, password)
@@ -65,6 +64,8 @@ const Login = () => {
                   type="email"
                   name="email"
                   placeholder="Your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="input input-bordered"
                   required
                 />
@@ -82,13 +83,16 @@ const Login = () => {
                   required
                 />
                 <label className="label">
-                  <Link to="/ForgetPassword" className="text-blue-500 hover:underline">
+                  <Link
+                    to={`/ForgetPassword?email=${encodeURIComponent(email)}`}
+                    className="text-blue-500 hover:underline"
+                  >
                     Forgot Password?
                   </Link>
                 </label>
               </div>
 
-              {error && <p className="text-red-500 text-sm">{error}</p>} {/* Show error below form */}
+              {error && <p className="text-red-500 text-sm">{error}</p>}
 
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
@@ -116,7 +120,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-    
     </div>
   );
 };

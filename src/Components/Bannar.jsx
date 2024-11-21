@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'animate.css';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -26,7 +27,7 @@ const Bannar = ({ CampaignData }) => {
     >
       <div className="bg-black bg-opacity-50 h-full p-4 flex flex-col justify-between">
         <div className='py-64'>
-          <h2 className="text-2xl my-4 font-bold text-white">{campaignData.title}</h2>
+          <h2 className="text-2xl my-4 font-bold text-white animate__animated animate__slideInDown animate__delay-3s">{campaignData.title}</h2>
           <p className="text-white">{campaignData.description}</p>
           <p className="text-white">Location: {campaignData.division}</p>
           <button className="btn my-5 bg-[#137257] text-white">More Info</button>
