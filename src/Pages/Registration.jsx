@@ -7,10 +7,8 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Registration = () => {
   const navigate = useNavigate();
   const { createUser, signInWithGoogle, UpdateUserProfile } = useContext(AuthContext);
-
   const [error, setError] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
-
   const handleRegistration = (e) => {
     e.preventDefault();
     const name = e.target.name.value;

@@ -2,7 +2,6 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged,
 import React, { createContext, useEffect, useState } from 'react';
 import { auth } from '../Firebase/firebase.init';
 
-// Creating AuthContext
 export const AuthContext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 

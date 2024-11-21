@@ -6,28 +6,27 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
   const { signInUser, signInWithGoogle } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from || "/"
+  console.log(location)
+
   const [error, setError] = useState("");
   const [email, setEmail] = useState("");
-
-  const from = location.state?.from?.pathname || "/";
-
   const handleLogin = (e) => {
     e.preventDefault();
     setError("");
     const password = e.target.password.value;
-
     signInUser(email, password)
-      .then((result) => {
-        console.log("Logged in user:", result.user);
+      .then(() => {
         e.target.reset();
-        navigate(from, { replace: true });
         toast.success("Login successful!");
+        navigate(from, { replace: true })
+
+
       })
       .catch((error) => {
-        console.error("Login error:", error.message);
         setError("Invalid email or password. Please try again.");
         toast.error("Login failed. Check your credentials.");
       });
@@ -35,10 +34,12 @@ const Login = () => {
 
   const handleLoginWithGoogle = () => {
     signInWithGoogle()
-      .then((result) => {
-        console.log("Google login user:", result.user);
-        navigate(from, { replace: true });
+      .then(() => {
         toast.success("Login successful with Google!");
+        navigate(from, { replace: true })
+
+
+
       })
       .catch((error) => {
         console.error("Google login error:", error.message);

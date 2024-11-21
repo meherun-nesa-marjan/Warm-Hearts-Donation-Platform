@@ -13,8 +13,6 @@ import Updateprofile from "../Components/Updateprofile";
 import Forgetpass from "../Components/Forgetpass";
 import HowToHelp from "../Components/HowToHelp";
 
-
-
 const Routes = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +22,6 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-
         children: [
           {
             path: "/",
@@ -37,49 +34,50 @@ const Routes = createBrowserRouter([
             loader: () => fetch('../Donate.json'),
           },
           {
-            path:"/HowToHelp",
-            element:<HowToHelp />
+            path: "/HowToHelp",
+            element: <HowToHelp />,
           },
-
           {
-            path: "/DonationDetails",
-            element: <Privet><DonationDetails /></Privet>,
+            path: "/DonationDetails/:id",
+            element: (
+              <Privet>
+                <DonationDetails />
+              </Privet>
+            ),
+            loader: () => fetch('../Donate.json'),
           },
           {
             path: "/Dashboard",
-            element:<Privet><Dashboard /></Privet>,
+            element: (
+              <Privet>
+                <Dashboard />
+              </Privet>
+            ),
           },
           {
-            path:"/UpdateProfile",
-            element:<Privet><Updateprofile /></Privet>
+            path: "/UpdateProfile",
+            element: (
+              <Privet>
+                <Updateprofile />
+              </Privet>
+            ),
           },
-        
-        ]
+        ],
       },
-
-
       {
         path: "/Login",
         element: <Login />,
-
       },
       {
         path: "/ForgetPassword",
         element: <Forgetpass />,
-
       },
       {
         path: "/Registration",
         element: <Registration />,
-
       },
-
-
-    ]
-
-
+    ],
   },
-
-
 ]);
+
 export default Routes;

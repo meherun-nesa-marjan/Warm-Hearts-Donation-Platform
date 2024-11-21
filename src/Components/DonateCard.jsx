@@ -18,8 +18,7 @@ const DonateCard = ({ CampaignData }) => {
             <p>Location: {campaignData.division}</p>
             <div className="card-actions justify-end">
               <Link
-                to={user ? `/DonationDetails` : '/Login'}
-                state={{ CampaignData: campaignData }}
+               to={`/DonationDetails/${campaignData.id}`}
               >
                 <button className="btn bg-[#137257] text-white">Donate Now</button>
               </Link>
