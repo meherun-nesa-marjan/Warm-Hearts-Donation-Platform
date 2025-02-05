@@ -49,5 +49,47 @@ This project uses the following npm packages:
 - `tailwindcss`
 - `vite`
 
+## 🛠️ Tech Stack
+- **Frontend**: ReactJS, Tailwind CSS, Duisy UI
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB , Firebase
+- Follow these steps to set up the project locally
+ <br>
+1️⃣ Clone the repository:
+
+```sh
+https://github.com/meherun-nesa-marjan/Warm-Hearts-Donation-Platform.git
+```
+2️⃣ Navigate to the project directory:
+
+```sh
+cd warmhearts
+```
+3️⃣ Install dependencies:
+
+```sh
+npm install
+```
+4️⃣ Create a .env file and add your Firebase configuration.<br>
+5️⃣ Start the development server:
+```sh
+npm run dev
+```
+
+## 📦 Dependencies
+```json
+"dependencies": {
+  "react": "^18.2.0",
+  "react-router-dom": "^6.14.1",
+  "firebase": "^9.6.1",
+  "tailwindcss": "^3.0.0",
+  "axios": "^1.3.0"
+}
+
+```
+
+---
+Visit our live site and join the journey to turn ideas into reality: [LifePair](https://warmhearts-app.netlify.app/) 
+
 
 
