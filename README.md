@@ -89,7 +89,7 @@ npm run dev
 ```
 
 ---
-Visit our live site and join the journey to turn ideas into reality: [LifePair](https://warmhearts-app.netlify.app/) 
+Visit our live site and join the journey to turn ideas into reality: [Live Link](https://warmhearts-app.netlify.app/) 
 
 
 
